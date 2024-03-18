@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Lobster&display=swap");
+body {
+  font-family: "Comfortaa", cursive;
+}
+body::before {
+  content: "";
+  background-image: url(img/bg2.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 60vmax;
+  position: absolute;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -9;
+}
+@media screen and (max-width: 992px) {
+  body::before {
+    opacity: 0.6;
+  }
+}
+
+.custom-nav .navbar-brand {
+  font-family: "Lobster", cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #836af1;
+}
+@media screen and (max-width: 488px) {
+  .custom-nav .navbar-brand {
+    text-shadow: 1px 2px 2px black;
+  }
+}
+.custom-nav #navbarNavAltMarkup .navbar-nav .nav-link {
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: 2.4em;
+  transition: 0.5s color ease;
+}
+.custom-nav #navbarNavAltMarkup .navbar-nav .nav-link:hover {
+  color: #1b227d;
+}
+@media screen and (max-width: 992px) {
+  .custom-nav {
+    margin-top: -1em;
+    text-shadow: 1px 2px 2px black;
+  }
+}
+
+.custom-section {
+  margin-top: 10em;
+  text-align: center;
+}
+.custom-section h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #836af1;
+  line-height: 1;
+}
+.custom-section h3 {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #aaafed;
+  white-space: nowrap;
+  line-height: 1;
+}
+.custom-section p {
+  color: black;
+  font-size: 1.1rem;
+  margin-top: 2em;
+}
+.custom-section a {
+  display: inline-block;
+  color: white;
+  background-color: #836af1;
+  border-radius: 2em;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+  margin-top: 2em;
+}
+.custom-section a:hover {
+  color: #836af1;
+  border: 1px solid #836af1;
+  background-color: transparent;
+}
+@media screen and (max-width: 992px) {
+  .custom-section {
+    box-sizing: border-box;
+    margin-top: -20px;
+  }
+  .custom-section h1 {
+    font-size: 350%;
+    text-shadow: 1px 2px 2px black;
+  }
+  .custom-section h3 {
+    color: black;
+    font-size: 130%;
+    text-shadow: 1px 2px 1px #aaafed;
+  }
+  .custom-section p {
+    font-size: 100%;
+    text-shadow: 1px 2px 2px #aaafed;
+  }
+  .custom-section a {
+    margin-top: -5px;
+  }
+}/*# sourceMappingURL=main.css.map */
